@@ -1,0 +1,38 @@
+service: ruempler-eu-zone 
+
+provider:
+  name: aws
+  runtime: python2.7
+
+package:
+  exclude:
+    - node_modules
+
+functions: []
+
+resources:
+  Resources:
+    Zone:
+      Type: "AWS::Route53::HostedZone"
+      Properties:
+        Name: ruempler.eu
+    RecordSets:
+      Type: "AWS::Route53::RecordSetGroup"
+      Properties:
+        HostedZoneName: ruempler.eu.
+        RecordSets:
+          - Name: ruempler.eu
+            Type: MX
+            TTL: 900
+            ResourceRecords:
+              - "10 mxlb.ispgateway.de."
+          - Name: ruempler.eu
+            Type: A
+            TTL: 900
+            ResourceRecords:
+              - 185.60.251.251
+          - Name: www.ruempler.eu
+            Type: CNAME
+            TTL: 900
+            ResourceRecords:
+              - soenke.jimdo.com
