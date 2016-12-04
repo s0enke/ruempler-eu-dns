@@ -41,4 +41,9 @@ resources:
             TTL: 900
             ResourceRecords:
               - '"PKc6vbQadAV05pwWzN2AunZbDOfh7Iu/VY2xuAPOQ7E="'
+          - Name: ruempler.eu
+            Type: TXT
+            TTL: 900
+            ResourceRecords:
+              - '"google-site-verification=Ajyc6xxVocM1d7NwyqVItmDIlCC5I2NPiInQApKoaPY"'
 
