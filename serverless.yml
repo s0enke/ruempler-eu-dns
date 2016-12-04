@@ -41,4 +41,14 @@ resources:
             TTL: 900
             ResourceRecords:
               - '"PKc6vbQadAV05pwWzN2AunZbDOfh7Iu/VY2xuAPOQ7E="'
+    RuemplerItRecordSets:
+      Type: "AWS::Route53::RecordSetGroup"
+      Properties:
+        HostedZoneName: ruempler.it.
+        RecordSets:
+          - Name: ruempler.it
+            Type: TXT
+            TTL: 900
+            ResourceRecords:
+              - '"google-site-verification=Ycke6QDSbGDb_229IMWNQ3i54zMtLfNwl-6FPuSBN20"'
 
