@@ -26,16 +26,6 @@ resources:
             TTL: 900
             ResourceRecords:
               - "10 mxlb.ispgateway.de."
-          - Name: ruempler.eu
-            Type: A
-            TTL: 900
-            ResourceRecords:
-              - 185.60.251.251
-          - Name: www.ruempler.eu
-            Type: CNAME
-            TTL: 900
-            ResourceRecords:
-              - soenke.jimdo.com
           - Name: _amazonses.ruempler.eu
             Type: TXT
             TTL: 900
