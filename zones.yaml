@@ -38,3 +38,7 @@ Resources:
           - "5 ALT2.ASPMX.L.GOOGLE.COM"
           - "10 ALT3.ASPMX.L.GOOGLE.COM"
           - "10 ALT4.ASPMX.L.GOOGLE.COM"
+  PlatzhalterZone:
+    Type: "AWS::Route53::HostedZone"
+    Properties:
+      Name: platzhalter.gmbh
